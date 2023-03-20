@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cart</title>
+	<link rel="stylesheet" type="text/css" href="proj.css">
+	<link rel="icon" type="image/x-icon" href="backs/ablogobc.png">
+  <script src="gallery.js" async></script>
+<style type="text/css">
+  li,ul{list-style-type: none;text-decoration: none;}
+a:link{text-decoration: none; color:gray; font-size: 30px;}
+a:visited{color: goldenrod; font-weight: bolder; }
+a:hover{color: orange; background-color: greenyellow;}
+/*a:active{color: red;}*/
+ul li{list-style-type: none; float:left; text-align: center;border: solid 2px gray;width: 170px; background-color: #e9e9e9; border-radius: 10px;}
+ul{display: inline;font-family:agency fb; font-weight: bold;}
+ul li:hover{background-color: greenyellow;}
+h1
+{
+	color: #e9e9e9;
+	text-align: center;
+	font-family: agency fb;
+	font-weight: bold;
+	font-size: 60px;
+}
+div.gallery
+{
+    margin: 5px;
+    
+    float: left;
+    width: 320px;
+}
+
+div.gallery img
+{
+    width: 320px;
+    height: 300px;
+}
+div.caption
+{
+    background-color: green;
+   	color: #e9e9e9;
+	font-family: agency fb;
+	font-weight: bold;
+	text-align: left;
+	font-size: 20px;
+}
+.chead
+{
+  color: #e9e9e9;
+  font-family: agency fb;
+  font-size: 30px;
+  font-weight: bold;
+}
+.names
+{
+    color: green;
+  font-family: agency fb;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+.price
+{
+    color: green;
+  font-family: agency fb;
+  font-size: 20px;
+  font-weight: bold;
+  float: right;
+  width: 100px;
+}
+.input
+{
+  background-color: skyblue;
+  color: black;
+  font-family: agency fb;
+  font-weight: bold;
+  font-size: 20px;
+  width: 50px;
+}
+.remove-button
+{
+  background-color: red;
+  color: #e9e9e9;
+  font-family: agency fb;
+  font-weight: bold;
+  font-size: 20px;  
+}
+</style>
+</head>
+<body style="background-color:Darkgray; Background:url(backs/back.jpg); background-size: cover; background-attachment: fixed;">
+<div class="topnav">
+    <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="register.html">REGISTER</a></li>
+        <li><a href="gallery.html">ACCESSORIES</a></li>
+        <input id="z" type="text" placeholder="Search..">
+        <a href="index.html"><img src="backs/ablogobc.png" alt="Colorised logo" width="180px" height="150px" style="position:absolute;"></a>
+    </ul>    
+</div>
+<div class="topnav">
+    <li><a href="cart.html"><input id="x" type="submit" value="Cart>" style="position: unset; background: url(backs/cart.png); background-size: 40px; background-repeat: no-repeat;"></a>
+    </li>
+</div>
+<!----------CART---------->
+<table width="500" border="2" cellpadding="5" cellspacing="0" bgcolor="white">
+  <tr bgcolor="royalblue">
+        <div>
+          <th><span  class="chead">ITEM</span></th>
+          <th><span  class="chead">PRICE</span></th>
+          <th><span  class="chead">QUANTITY</span></th>
+        </div>
+  </tr>
+  <tr>
+    <div  class="cart-items">
+        <div  class="cart-row">
+    <td>
+          <div class="cart-column">
+            <img src="backs/forest.jpeg" width="200" height="250"><br>
+            <span class="names">Ninja H2R</span>
+          </div>
+    </td>
+    <td>
+          <span class="price">$55</span><br>
+    </td>
+    <td>
+          <div>
+            <input type="number" value="1" class="input">
+            <button class="remove-button" type="button">REMOVE</button>
+          </div>
+    </td>   
+        </div>
+        <!---Another product--->
+        <div class="cart-row">
+  <tr>
+    <td>
+          <div class="cart-column">
+            <img src="backs/forest.jpeg" width="200" height="250"><br>
+            <span class="names">Ninja H2R</span>
+          </div>
+    </td>
+    <td>
+          
+          <span class="price">$55</span><br>
+    </td>
+    <td>
+          <div>
+            <input type="number" value="2" class="input">
+            <button class="remove-button" type="button">REMOVE</button>
+          </div>
+    </td>   
+        </div>
+    </div>
+  </tr>
+  </tr>
+  <div>
+    <tr>
+      <td>
+        <strong class="cart-total-title">Total:</strong>
+        <span class="cart-total-price">$165</span>
+      </td>
+    </tr>
+  </div>
+</table>
+<!--<marquee behavior="alternate"><img src="backs/bikes.png" alt="motors" style="width: 1100px; height: 350px;"></marquee><br><br><br>-->
+</body>
+</html>
