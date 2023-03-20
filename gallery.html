@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Acer group Home Page</title>
+<link rel="stylesheet" type="text/css" href="proj.css">
+<link rel="icon" type="image/x-icon" href="backs/IMG-20230318-WA0077.png">
+<style type="text/css">
+li,ul{list-style-type: none;text-decoration: none;}
+a:link{text-decoration: none; color:gray; font-size: 30px;}
+a:visited{color: goldenrod; font-weight: bolder; }
+a:hover{color: orange; background-color: greenyellow;}
+/*a:active{color: red;}*/
+ul li{list-style-type: none; float:left; text-align: center;border: solid 2px gray;width: 170px; background-color: #e9e9e9; border-radius: 10px;}
+ul{display: inline;font-family:agency fb; font-weight: bold;}
+ul li:hover{background-color: greenyellow;}
+.zoom {
+  transition: transform .2s;
+}
+
+.zoom:hover {
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1); 
+}
+div.gallery
+{
+    margin: 5px;
+    
+    float: left;
+    width: 310px;
+}
+
+div.gallery img
+{
+    width: 310px;
+    height: 300px;
+}
+div.caption
+{
+    background-color: green;
+    color: #e9e9e9;
+    font-family: agency fb;
+    font-weight: bold;
+    text-align: left;
+    font-size: 20px;
+}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: green;
+  font-family: algerian;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+div.smedia
+{
+ float:right; text-align: center;border: solid 3px gray;width: 170px; background-color: #e9e9e9; border-radius: 10px; width: 190px; margin-top: -540px; position: relative;
+}
+div.contact
+{
+   text-align: center;border: solid 3px gray;width: 350px; background-color: #e9e9e9; border-radius: 10px; position: relative; font-family: agency fb; font-weight: bold;
+}
+
+form.example button {
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+</style>
+</head>
+<body style="background-color:Darkgray; Background:url(backs/background.jfif); background-size: cover 100% 50%; background-attachment: fixed; background-repeat: no-repeat; background-size: 1600px;">
+<script type="text/javascript">
+   {alert("Acer Group Ltd Rwanda!")}
+</script>
+<div class="topnav">
+    <ul>
+            <a href="index.html"><img src="backs/IMG-20230318-WA0077.jpg" alt="Colorised logo" width="180px" height="150px" style="position: absolute;"></a>
+
+      <li><a href="index.html">Home</a></li>
+       <li><a href="gallery.html">Buy Device</a></li>
+       <li><a href="sell.html">Sell your Device</a></li>
+       <li><a href="register0.php">Create Account</a></li>
+       <li><a href="login.html">Log In</a></li>
+       <li><a href="about.html">Acer Staff</a></li>
+  <!--<form class="example" action="action.php">
+    <input type="text" placeholder="Search..." name="search" style="background: url(backs/search.png); background-size: 50px; background-repeat: no-repeat; background-position: right;">    
+  </form>-->
+    </ul>       
+</div>
+<div class="topnav">
+    <!--<li><a href="cart.html"><input id="x" type="submit" value="Cart>" style="position: unset; background: url(backs/cart.png); background-size: 40px; background-repeat: no-repeat;" ></a>
+    </li>-->
+</div><br><br>
+<div class="slideshow-container">
+<div class="mySlides fade">
+  <div class="numbertext">I</div>
+  <img src="backs/fridge.jfif" style="width: 100px; height: 100px">
+  <div class="text">Best computers</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">II</div>
+  <img src="backs/background.jfif" style="width: 100px; height: 100px">
+  <div class="text">Buy Now</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">III</div>
+  <img src="backs/smart tv.jfif" style="width: 100px; height: 100px">
+  <div class="text">The best Electronic Devices</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center; color:darkgreen;">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 5000); // Change image every 5 seconds
+}
+</script>
+
+<br><br>
+<table>
+<div class="gallery">
+  <a target="_blank" href="gallery.html">
+    <img src="backs/hplaptop.jfif" alt="product" width="300px" height="500px" class="zoom">
+  </a>
+    <div class="caption"><span>HP Laptop<br>HDD:500GB <br>Processor: 8gb core i5<br>Price: 400$</span></div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="gallery.html">
+    <img src="backs/tv.jfif" alt="product" width="380px" height="500px" class="zoom">
+  </a>
+    <div class="caption"><span>smart tv<br>HDD:500GB <br>Processor: 8gb core i5<br>Price: 400$</span></div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="gallery.html">
+    <img src="backs/fridge.jfif" alt="product" width="300px" height="500px" class="zoom">
+  </a>
+    <div class="caption"><span>Fridge<br>HDD:500GB <br>Processor: 8gb core i5<br>Price: 400$</span></div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="gallery.html">
+    <img src="backs/Lenovo ThinkPad x 250.jfif" alt="product" width="350px" height="500px" class="zoom">
+  </a>
+    <div class="caption"><span>Lenovo ThinkPad<br>HDD:500GB <br>Processor: 8gb core i5<br>Price: 400$</span></div>
+</div>
+</table>
+  
+<a href="gallery.html" target="_blank">
+  <strong>
+    <ul>
+      <li>More devices</li>
+    </ul>
+  </strong>
+</a>
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<p style="color: darkorange; font-family: agency fb; font-weight:bold; font-size:35px;"><b>Contact us on:<br></b></p>
+
+<div class="contact" style="float: left;">
+    <a href="#phone"><img src="backs/phone.png" alt="Icon" width="50px" height="50px">0786856315</a>
+</div>
+<div class="contact" style="float: right;">
+    <a href="#whatsapp"><img src="backs/whatsapp.png" alt="Icon" width="50px" height="50px">0783962518</a>
+</div>
+<center><div class="contact" style="width: 450px">
+    <a href="#email"><img src="backs/email.png" alt="Icon" width="60px" height="50px">Email:umuhozaapp@gmail.com</a>
+</div>
+</center>
+</body>
+</html>
